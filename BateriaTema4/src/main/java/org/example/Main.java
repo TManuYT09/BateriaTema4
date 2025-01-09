@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        ejecucion();
+    }
+    public static void ejecucion(){
         imprimirMenu();
         int opc=pedirOpcion();
         ejecutarOpcion(opc);
@@ -38,7 +41,7 @@ public class Main {
         System.out.println("[X] - Salir");
         String opcion = entrada.next();
         if (opcion.equals("M")){
-            main();
+            ejecucion();
         }
     }
 }
