@@ -7,9 +7,9 @@ public class Ejercicio1 {
         System.out.println("Introduzca un numero");
         int num=Pedir.pedirNumero();
         if (num==0){
-            System.out.println(0);
+            System.out.println("Tiene "+1+" digitos");
         }else {
-            System.out.println(calculo(num));
+            System.out.println("Tiene "+calculo(num)+" digitos");
         }
     }
     private static int calculo(int num){
