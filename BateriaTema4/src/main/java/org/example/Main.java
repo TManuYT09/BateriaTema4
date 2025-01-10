@@ -8,8 +8,8 @@ public class Main {
     }
     public static void ejecucion(){
         imprimirMenu();
-        int opc=pedirOpcion();
-        ejecutarOpcion(opc);
+        ejecutarOpcion(Pedir.pedirNumero());
+        System.out.print("\n");
         finalEjecucion();
     }
     public static void imprimirMenu(){
@@ -22,10 +22,6 @@ public class Main {
         System.out.println("\t5 - A binario");
         System.out.println("\t6 - Orden alfabético");
         System.out.println("\t7 - Mostrar suma");
-    }
-    public static int pedirOpcion(){
-        Scanner entrada=new Scanner(System.in);
-        return entrada.nextInt();
     }
     public static void ejecutarOpcion(int opc){
         switch (opc){
@@ -40,12 +36,10 @@ public class Main {
         }
     }
     public static void finalEjecucion(){
-        Scanner entrada=new Scanner(System.in);
-        System.out.print("\n");
         System.out.println("Elige una opción:");
         System.out.println("\t[M] - Volver al menú principal");
         System.out.println("\t[X] - Salir");
-        String opcion = entrada.next();
+        String opcion = Pedir.pedirLetra();
         switch (opcion.toUpperCase()){
             case "M": ejecucion(); break;
             case "X": System.exit(0); break;
