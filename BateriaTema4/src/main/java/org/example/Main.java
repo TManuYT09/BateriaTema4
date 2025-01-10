@@ -10,6 +10,7 @@ public class Main {
         imprimirMenu();
         int opc=pedirOpcion();
         ejecutarOpcion(opc);
+        finalEjecucion();
     }
     public static void imprimirMenu(){
         System.out.println("*** Batería de ejercicios sobre recursividad ***");
@@ -28,20 +29,27 @@ public class Main {
     }
     public static void ejecutarOpcion(int opc){
         switch (opc){
-            case 1:Ejercicio1.main();
-                break;
-            default:System.out.println("Opción no valida");
-                break;
+            case 1:Ejercicio1.main(); break;
+            case 2:Ejercicio2.main(); break;
+            case 3:Ejercicio3.main(); break;
+            case 4:Ejercicio4.main(); break;
+            case 5:Ejercicio5.main(); break;
+            case 6:Ejercicio6.main(); break;
+            case 7:Ejercicio7.main(); break;
+            default:System.out.println("Opción no valida"); break;
         }
     }
     public static void finalEjecucion(){
         Scanner entrada=new Scanner(System.in);
+        System.out.println(" ");
         System.out.println("Elige una opción:");
         System.out.println("[M] - Volver al menú principal");
         System.out.println("[X] - Salir");
         String opcion = entrada.next();
-        if (opcion.equals("M")){
-            ejecucion();
+        switch (opcion.toUpperCase()){
+            case "M": ejecucion(); break;
+            case "X": System.exit(0); break;
+            default: System.out.println("Opción "+opcion+" no contemplata"); finalEjecucion(); break;
         }
     }
 }
