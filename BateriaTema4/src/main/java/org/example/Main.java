@@ -15,13 +15,13 @@ public class Main {
     public static void imprimirMenu(){
         System.out.println("*** Batería de ejercicios sobre recursividad ***");
         System.out.println("Selecciona a continuación el modo que quieras ejecutar...");
-        System.out.println("1 - Dígitos");
-        System.out.println("2 - Potencias");
-        System.out.println("3 - Del Revés");
-        System.out.println("4 - Binario");
-        System.out.println("5 - A binario");
-        System.out.println("6 - Orden alfabético");
-        System.out.println("7 - Mostrar suma");
+        System.out.println("\t1 - Dígitos");
+        System.out.println("\t2 - Potencias");
+        System.out.println("\t3 - Del Revés");
+        System.out.println("\t4 - Binario");
+        System.out.println("\t5 - A binario");
+        System.out.println("\t6 - Orden alfabético");
+        System.out.println("\t7 - Mostrar suma");
     }
     public static int pedirOpcion(){
         Scanner entrada=new Scanner(System.in);
@@ -41,10 +41,10 @@ public class Main {
     }
     public static void finalEjecucion(){
         Scanner entrada=new Scanner(System.in);
-        System.out.println(" ");
+        System.out.print("\n");
         System.out.println("Elige una opción:");
-        System.out.println("[M] - Volver al menú principal");
-        System.out.println("[X] - Salir");
+        System.out.println("\t[M] - Volver al menú principal");
+        System.out.println("\t[X] - Salir");
         String opcion = entrada.next();
         switch (opcion.toUpperCase()){
             case "M": ejecucion(); break;

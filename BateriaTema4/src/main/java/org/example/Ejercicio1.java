@@ -3,6 +3,7 @@ package org.example;
 import java.util.Scanner;
 
 public class Ejercicio1 {
+    static int cantidad=1;
     public static void main(){
         System.out.println("Introduzca un numero");
         int num=pedirNumero();
@@ -14,16 +15,16 @@ public class Ejercicio1 {
     }
     private static int pedirNumero(){
         Scanner entrada=new Scanner(System.in);
-        System.out.println("Introduzca un numero");
         int num=entrada.nextInt();
         return num;
     }
     private static int calculo(int num){
-        int cant=1;
-        while (num>10){
+        if (num>=10){
             num=num/10;
-            cant++;
+            cantidad++;
+            return calculo(num);
+        } else {
+            return cantidad;
         }
-        return cant;
     }
 }
