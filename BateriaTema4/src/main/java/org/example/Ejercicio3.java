@@ -17,7 +17,7 @@ public class Ejercicio3 {
                     String numt=String.valueOf(num);
                     System.out.println(mostrarResultado(numt,numt.length()));
                 }else {
-                    System.out.println("ERROR");
+                    System.out.println("ERROR. Numero no es positivo");
                 }
                 break;
             case "T":
