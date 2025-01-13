@@ -26,12 +26,12 @@ public class Main {
     public static void ejecutarOpcion(int opc){
         switch (opc){
             case 1:Ejercicio1.main(); break;//Hecho
-            case 2:Ejercicio2.main(); break;
-            case 3:Ejercicio3.main(); break;
-            case 4:Ejercicio4.main(); break;
-            case 5:Ejercicio5.main(); break;
-            case 6:Ejercicio6.main(); break;
-            case 7:Ejercicio7.main(); break;
+            case 2:Ejercicio2.main(); break;//Hecho
+            case 3:Ejercicio3.main(); break;//Hecho
+            case 4:Ejercicio4.main(); break;//Hecho
+            case 5:Ejercicio5.main(); break;//Hecho
+            case 6:Ejercicio6.main(); break;//Hecho
+            case 7:Ejercicio7.main(); break;//Hecho
             default:System.out.println("Opción no valida"); break;
         }
     }
